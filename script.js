@@ -19,6 +19,6 @@ const cheerio = require('cheerio');
     let oldPrice = $('p[class="product-old-price"] > s').first().text();
     let newPrice = $('p[class="product-new-price"]').first().text();
 
+    console.log(title.trim(), cache, frequency, boost, cores, threads, oldPrice, newPrice.trim());
 })();
-
 
